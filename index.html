@@ -8,6 +8,8 @@
         <title>Semantics for Personal Health</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Iconify SVG Framework -->
+        <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -109,10 +111,46 @@
         <!-- Personal Health Knowledge Graph-->
         <section class="page-section bg-light" id="phkg">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Personal Health Knowledge Graph Generation</h2>
+                <h2 class="text-center mt-0">Personal Health Knowledge Graph</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-
+                    <div class="col-lg-3 col-md-6 text-left">
+                        <div class="mt-5">
+                            
+                            <div class="mb-2"><i class="iconify fs-1 text-primary" data-icon="bx:bx-food-menu"></i></div>
+                            <h3 class="h4 mb-2">Synthetic Meal-Level Food Log Dataset</h3>
+                            <p class="text-muted mb-0">We used synthetic food log data at the meal-level granularity (i.e., breakfast, lunch, snack, and dinner), which spans five weeks. This dataset follows the MyFitnessPal schema, offering the nutrient information of the foods consumed by the user, as well as the food names.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-left">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="iconify fs-1 text-primary" data-icon="carbon:chart-line-data"></i></div>
+                            <h3 class="h4 mb-2">Guideline-Influenced Insight Discovery</h3>
+                            <p class="text-muted mb-0">We extended a version of an existing time-series summarization (TSS) framework to mine synthetic food log data for relevant behavioral insights. These insights were inspired by a selected set of dietary guidelines defined by the American Diabetes Association for diabetics and pre-diabetics.
+                            </p>
+                        </div>
+                    </div>
+<!--                    <div class="col-lg-auto col-md-6 text-left"></div>-->
+                    <div class="col-lg-3 col-md-6 text-left">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="iconify fs-1 text-primary" data-icon="carbon:data-vis-1"></i></div>
+                            <h3 class="h4 mb-2">RDF Triple Generation for PHKG Population</h3>
+                            <p class="text-muted mb-0">Using concepts and relationships defined within the Personal Health Ontology, we translate the discovered temporal insights into RDF triples. These triples are, then, used to populate the Personal Health Knowledge Graph along with personal information about the user and structured food history data.
+                            </p>
+                        </div>
+                    </div>
+<!--                    <div class="col-lg-auto col-md-6 text-left"></div>-->
+                    <div class="col-lg-3 col-md-6 text-left">
+                        <div class="mt-5">
+                            
+                            <div class="mb-2"><i class="iconify fs-1 text-primary" data-icon="ic:baseline-access-time"></i></div>
+                            <h3 class="h4 mb-2">Timely Repopulation for Constraint Queries</h3>
+                            <p class="text-muted mb-0">As we are working with temporal personal and health information, the Personal Health Knowledge Graph is expected to update its constraints in a timely manner to provide the most accurate and relevant constraints when it is queried. To achieve this, it is repopulated by the TSS framework.   
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
